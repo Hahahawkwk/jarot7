@@ -98,6 +98,8 @@ async function startXeonBotInc() {
             console.log(err)
         }
     })
+	
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)	
     
     // Group Update
     XeonBotInc.ev.on('groups.update', async pea => {
